@@ -5,79 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Crystals Collector!</title>
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css"/>
+
   </head>
   <body>
     <container id="wrapper">
       <h1>Crystals Collector!</h1>
 
-      <div class="row">
-      <div class="col-md-2"></div>
-      <div class="col-md-8" style="background-color: rgb(70, 69, 67); padding: 10px 30px 20px">
+      <div class="row" id="main-container">
+        <div class="col-md-2"></div>
+        <div
+          class="col-md-8"
+          style="background-color: rgb(70, 69, 67);opacity: .8; padding: 20px 30px 20px"
+        >
+          <p>You will be given a random number at the start of the game.</p>
 
-      <p>You will be given a random number at the start of the game.</p>
+          <p>
+            There are four crystals below. By clicking on a crystal you will add
+            a specific amount of points to your total score.
+          </p>
 
-      <p>
-        There are four crystals below. By clicking on a crystal you will add a
-        specific amount of points to your total score.
-      </p>
+          <p>
+            You win the game by matching your total score to a random number,
+            you lose the game if your total score goes above the random number.
+          </p>
 
-      <p>
-        You win the game by matching your total score to a random number, you
-        lose the game if your total score goes above the random number.
-      </p>
+          <p>
+            The value of each crystal is hidden from you until you click on it.
+          </p>
 
-      <p>The value of each crystal is hidden from you until you click on it.</p>
+          <p>
+            Each time when the game starts, the game will change the values of
+            each crystal.
+          </p>
+          <div class="col-md-2"></div>
+        </div>
 
-      <p>
-        Each time when the game starts, the game will change the values of each
-        crystal.
-      </p>
-      <div class="col-md-2"></div>
+        <div class="row"></div>
+        <div class="col-md-3"></div>
 
+        <div
+          class="col-md-3"
+          style="color: rgb(63, 12, 111);
+        background-color: rgb(12, 187, 187);
+        height: 100px;"
+        >
+          <h2>
+            Target Number:
+            <div id="compChoice"></div>
+          </h2>
+        </div>
+
+        <div
+          class="col-md-3 "
+          style="color: rgb(63, 12, 111);
+        background-color: rgb(12, 187, 187);
+        height: 100px;"
+        >
+          <h2>
+            Your total score is:
+            <div id="playerGuesses"></div>
+          </h2>
+        </div>
+      
+
+      <div class="row"></div>
+      <div class="col-md-4"></div>
+
+      <div
+        class="col-md-2"
+        style="color: rgb(63, 12, 111);
+      background-color: rgb(12, 187, 187);
+      height: 100px;"
+      >
+        <h2>
+          Wins:
+          <div id="playerWins"></div>
+        </h2>
       </div>
 
-    <div class="row"></div>
-        <div class="col-md-2 "></div>
-        <div class="col-md-2 "; 
+      <div
+        class="col-md-2"
         style="color: rgb(63, 12, 111);
-        background-color: rgb(12, 187, 187)">
+      background-color: rgb(12, 187, 187);
+      height: 100px;"
+      >
         <h2>
-        Target Number:
-        <div id="compChoice"></div>
+          Losses:
+          <div id="playerLosses"></div>
         </h2>
-        </div>
+      </div>
+      <div class="col-md-4"></div>
 
-        <div class="col-md-2 "; 
-        style="color: rgb(63, 12, 111);
-        background-color: rgb(12, 187, 187)">
-        <h2>
-                Your total score is:
-        <div id="playerGuesses"></div>
-        </h2>
-        </div>
+<div class="row"></div>
+<div class="col-md-2"></div>
+<div
+  class="col-md-8"
+  style="background-color: rgb(70, 69, 67);opacity: .8; padding: 5px 30px 5px;
+  text-align: center;color: whitesmoke"
+>
+<h3>Crystals!</h3>
 
-        <div class="col-md-2 "; 
-        style="color: rgb(63, 12, 111);
-        background-color: rgb(12, 187, 187)">
-        <h2>
-        Wins:
-        <div id="playerWins"></div>
-        </h2>
-        </div>
+<div class="row"></div>
+<div class="col-md-2"></div>
+<button class="col-md-2"id="gem1" style="background: none; border: none; margin: auto;">
+    <img src="assets/images/gem1.png" alt="gem1"/>
+</button>
+<button class="col-md-2"id="gem2" style="background: none; border: none; margin: auto;">
+<img src="assets/images/gem2.png" alt="gem2"/>
+</button>
+<button class="col-md-2"id="gem3" style="background: none; border: none">
+<img src="assets/images/gem3.png" alt="gem3"/>
+</button>
+<button class="col-md-2"id="gem4" style="background: none; border: none">
+<img src="assets/images/gem4.png" alt="gem4"/>
+</button>
+<div class="col-md-2"></div>
+</div>
 
-        <div class="col-md-2 "; 
-        style="color: rgb(63, 12, 111);
-        background-color: rgb(12, 187, 187)">
-        <h2>
-        Losses:
-        <div id="playerLosses"></div>
-        </h2>
-        </div>
-
-
-      <div id="crystals"></div>
 
     </container>
   </body>
