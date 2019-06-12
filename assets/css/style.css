@@ -1,0 +1,20 @@
+body {
+    background-image: url("/assets/images/Cave.png");
+    margin: 20px;
+}
+
+h1 {
+    color: whitesmoke;
+    position: relative;
+    text-align: center;
+}
+
+p {
+    color: whitesmoke;
+}
+
+#compChoice {
+    color: rgb(63, 12, 111);
+    background-color: rgb(12, 187, 187)
+}
+
