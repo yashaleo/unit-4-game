@@ -21,7 +21,7 @@ function gemPick() {
 function randomCompChoice() {
   compChoice = Math.floor(Math.random() * 102) + 19;
   console.log("Compter choose: " + compChoice);
-  $("compTarget").text(compChoice);
+  $("#compTarget").text(compChoice);
 }
 
 // adding up the win and loses
@@ -30,6 +30,12 @@ function scoreBoard() {
   $("#Wins").text(playerWins);
   $("#Losses").text(playerLosses);
 }
+
+// adding up the total gems
+$(".buttons").on("click", function() {
+  idOfInput = $(this).attr("id");
+  crystals.onclickFunction(idOfInput);
+});
 
 crystals = {
   onclickFunction: function(clickValue) {
@@ -50,12 +56,8 @@ crystals = {
   }
 };
 
-// adding up the total gems
-$(".buttons").on("click", function() {
-  idOfInput = $(this).attr("id");
-  crystals.onclickFunction(idOfInput);
-});
 
+ 
 function check() {
   if (playerGuesses === compChoice) {
     playerWins++;
