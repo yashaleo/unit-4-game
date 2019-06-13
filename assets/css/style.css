@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url("assets/images/Cave.png");
+  background-image: url("/assets/images/Cave.png");
   width: 100%;
 }
 
@@ -30,3 +30,4 @@ h1 {
 p {
   color: whitesmoke;
 }
+

@@ -11,7 +11,9 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery.js"></script>
+
 
   </head>
   <body>
@@ -58,7 +60,7 @@
         >
           <h2>
             Target Number:
-            <div id="compChoice"></div>
+            <div id="compTarget"></div>
           </h2>
         </div>
 
@@ -70,10 +72,11 @@
         >
           <h2>
             Your total score is:
-            <div id="playerGuesses"></div>
+            <div id="playerTarget"></div>
           </h2>
         </div>
       
+
 
       <div class="row"></div>
       <div class="col-md-4"></div>
@@ -86,7 +89,7 @@
       >
         <h2>
           Wins:
-          <div id="playerWins"></div>
+          <div id="Wins"></div>
         </h2>
       </div>
 
@@ -98,7 +101,7 @@
       >
         <h2>
           Losses:
-          <div id="playerLosses"></div>
+          <div id="Losses"></div>
         </h2>
       </div>
       <div class="col-md-4"></div>
@@ -107,30 +110,32 @@
 <div class="col-md-2"></div>
 <div
   class="col-md-8"
-  style="background-color: rgb(70, 69, 67);opacity: .8; padding: 5px 30px 5px;
+  style="background-color: rgb(70, 69, 67);opacity: .5; padding: 5px 10px 5px;
   text-align: center;color: whitesmoke"
 >
 <h3>Crystals!</h3>
 
+
 <div class="row"></div>
-<div class="col-md-2"></div>
-<button class="col-md-2"id="gem1" style="background: none; border: none; margin: auto;">
+<button class="col-md-4 buttons"id="gem1" style="background: none; border: none; margin: 0;">
     <img src="assets/images/gem1.png" alt="gem1"/>
 </button>
-<button class="col-md-2"id="gem2" style="background: none; border: none; margin: auto;">
+<button class="col-md-4 buttons"id="gem2" style="background: none; border: none; margin: 0;">
 <img src="assets/images/gem2.png" alt="gem2"/>
 </button>
-<button class="col-md-2"id="gem3" style="background: none; border: none">
+
+
+<div class="row"></div>
+<button class="col-md-4 buttons"id="gem3" style="background: none; border: none; margin: 0;">
 <img src="assets/images/gem3.png" alt="gem3"/>
 </button>
-<button class="col-md-2"id="gem4" style="background: none; border: none">
+<button class="col-md-4 buttons"id="gem4" style="background: none; border: none; margin: 0;">
 <img src="assets/images/gem4.png" alt="gem4"/>
 </button>
-<div class="col-md-2"></div>
 </div>
 
 
-    </container>
+  </container>
   </body>
 
   <script src="assets/javascript/game.js"></script>
