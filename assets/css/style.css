@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url("/assets/images/Cave.png");
+  background-image: url("../images/Cave.png");
   width: 100%;
 }
 
